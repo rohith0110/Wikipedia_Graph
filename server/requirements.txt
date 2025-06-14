@@ -1,0 +1,9 @@
+requests
+wikipedia-api
+tqdm
+sendgrid
+psutil
+ijson
+python-igraph
+flask
+flask-cors
