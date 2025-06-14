@@ -1,0 +1,10 @@
+venv/
+wiki_env/
+wikigraph-explorer/node_modules/
+wikigraph-explorer/build/
+*.pem
+tmux.txt
+*.log
+log.txt
+.DS_Store
+Thumbs.db

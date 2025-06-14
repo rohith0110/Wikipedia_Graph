@@ -1,0 +1,73 @@
+/* src/App.css (The Final, Corrected Version for a Dark Theme) */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    /* Set a base background color for the whole page */
+    background-color: #000000;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.search-bar-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    max-width: 90%;
+    z-index: 100;
+}
+
+.overview-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    background-color: #222;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 100;
+}
+.overview-button:hover {
+    background-color: #444;
+}
+
+.graph-container {
+    flex-grow: 1;
+    /* THIS IS THE CRITICAL FIX: Ensure a pure black background */
+    background: #000000;
+    position: relative; 
+}
+
+.loading-overlay, .message { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    z-index: 99;
+    text-align: center;
+    color: #ffffff; /* White text for loading messages */
+}
+
+.loading-overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.sigma-labels {
+  text-shadow: 
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+}

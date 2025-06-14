@@ -1,0 +1,13 @@
+wikipedia.db filter=lfs diff=lfs merge=lfs -text
+*.jsonl filter=lfs diff=lfs merge=lfs -text
+overview.json filter=lfs diff=lfs merge=lfs -text
+elements.json filter=lfs diff=lfs merge=lfs -text
+crawler_checkpoint.json filter=lfs diff=lfs merge=lfs -text
+*.py    text eol=lf
+*.js    text eol=lf
+*.jsx   text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+server/*.json filter=lfs diff=lfs merge=lfs -text
+server/*.jsonl filter=lfs diff=lfs merge=lfs -text
+server/wikipedia.db filter=lfs diff=lfs merge=lfs -text
