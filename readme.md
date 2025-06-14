@@ -47,14 +47,19 @@ For a deep dive into the project's architecture, see [`ARCHITECTURE.md`](./ARCHI
 │       ├── WikiGraph.jsx    # Sigma.js graph rendering component
 │       ├── App.css          # Styles
 │       └── ...
-├── create_graph_data.py     # Main Wikipedia crawler script
-├── ingest.py                # Ingests crawler output into SQLite
-├── create_overview.py       # Creates the main 'overview.json' graph
-├── app.py                   # Flask API server
-├── elements.json            # (Generated) Raw output from the crawler
-├── overview.json            # (Generated) Graph data for the main view
-├── wikipedia.db             # (Generated) SQLite database
-├── requirements.txt         # Python dependencies (You should create this)
+├── Backend/      # React Frontend Application
+│   ├── create_graph_data.py     # Main Wikipedia crawler script
+│   ├── ingest.py                # Ingests crawler output into SQLite
+│   ├── create_overview.py       # Creates the main 'overview.json' graph
+│   ├── app.py                   # Flask API server
+│   ├── elements.json            # (Generated) Raw output from the crawler
+│   ├── overview.json            # (Generated) Graph data for the main view
+│   ├── wikipedia.db             # (Generated) SQLite database
+│   ├── requirements.txt         # Python dependencies (You should create this)
+│   └── ...
+├── ARCHITECTURE.md
+├── readme.md
+├── LICENCE
 └── ...
 ```
 
@@ -78,7 +83,8 @@ You have two options to get started:
 
     ```bash
     git clone https://github.com/rohith0110/Wikipedia_Graph.git
-    cd your-repo-name
+    cd Wikipedia_Graph
+    cd Backend
     ```
 
 2.  **Create a Python Virtual Environment**
@@ -121,7 +127,7 @@ You have two options to get started:
 1.  **Navigate to the Frontend Directory**
 
     ```bash
-    cd wikigraph-explorer
+    cd wikigraph-explorer_React-APP
     ```
 
 2.  **Install Node.js Dependencies**
@@ -153,7 +159,7 @@ You have two options to get started:
 If you are using the `wikipedia.db` and `overview.json` files included in the repository, you can skip the data generation and run the server directly.
 
 1.  **Start the Backend API Server**
-    From the project's root directory:
+    From the project's Backend directory:
 
     ```bash
     # Make sure your virtual environment is active
@@ -227,4 +233,4 @@ Once the data generation is complete, follow the steps from **"Option 1: Using t
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License. See the [`LICENCE`](./LICENCE) file for details.
