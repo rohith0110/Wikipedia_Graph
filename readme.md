@@ -4,6 +4,8 @@ WikiGraph Explorer is a full-stack web application that visualizes the interconn
 
 Users can explore a "Galaxy View" showing topic clusters, search for specific articles, and drill down into a "Detail View" to see the immediate neighborhood of any article.
 
+You can read the How_It_Works_The_Data_Pipeline.md file to know how the application works
+
 ---
 
 ## Features
